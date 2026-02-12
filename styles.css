@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background:#2B336C;
+}
+
+/* Section controls scroll duration */
+.parallax {
+  position: relative;
+  height: calc(100vh + 2000px);
+}
+
+/* Fixed Background */
+.parallax-bg {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1039px;
+  height: 100vh;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.parallax-bg img {
+  height: 100vh;       /* Always full viewport height */
+  width: auto;         /* Preserve ratio */
+  /*max-width: 1039px;   /* Never exceed original width */
+}
+
+
+/* Foreground scroll area */
+.parallax-inner {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  /*display: flex;*/
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+/* Foreground layers */
+.layer {
+  position: absolute;
+  width: 100%;
+  /*max-width: 1039px;*/
+  height: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  will-change: transform;
+}
