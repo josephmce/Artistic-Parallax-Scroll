@@ -52,3 +52,10 @@ body {
   transform: translateX(-50%);
   will-change: transform;
 }
+.blue-div {
+  height: 1000px;
+  background: blue;
+  width: 100%;
+  z-index: 10; /* above parallax if needed */
+  position: relative; /* normal flow */
+}
